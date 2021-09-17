@@ -3,3 +3,15 @@
 ################################################################################
 
 *.v2
+/bin/Debug/netcoreapp3.1
+/obj/Debug/netcoreapp3.1/staticwebassets
+/obj/Debug/netcoreapp3.1/HardCodeTestApi.RazorTargetAssemblyInfo.cache
+/obj/Debug/netcoreapp3.1/HardCodeTestApi.pdb
+/obj/Debug/netcoreapp3.1/HardCodeTestApi.MvcApplicationPartsAssemblyInfo.cs
+/obj/Debug/netcoreapp3.1/HardCodeTestApi.MvcApplicationPartsAssemblyInfo.cache
+/obj/Debug/netcoreapp3.1/HardCodeTestApi.genruntimeconfig.cache
+/obj/Debug/netcoreapp3.1/HardCodeTestApi.dll
+/obj/Debug/netcoreapp3.1/HardCodeTestApi.csproj.FileListAbsolute.txt
+/obj/Debug/netcoreapp3.1/HardCodeTestApi.csproj.CoreCompileInputs.cache
+/obj/Debug/netcoreapp3.1/HardCodeTestApi.csproj.CopyComplete
+/obj/Debug/netcoreapp3.1/apphost.exe
