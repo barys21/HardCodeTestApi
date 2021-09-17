@@ -19,6 +19,6 @@ namespace HardCodeTestApi.Models
 
         public int CategoryId { get; set; }
 
-        public Category Category { get; set; }
+        public Category Categories { get; set; }
     }
 }

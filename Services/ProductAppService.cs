@@ -19,7 +19,7 @@ namespace HardCodeTestApi.Services
 
         public async Task<List<Product>> GetAll()
         {
-            return await _context.Products.ToListAsync();
+            return await _context.Products.Include(x => x.Categories).ToListAsync();
         }
 
         public async Task<Product> GetById(int id)
