@@ -22,7 +22,7 @@ namespace HardCodeTestApi.Services
             return await _context.Products.ToListAsync();
         }
 
-        public async Task<Product> GetById(string id)
+        public async Task<Product> GetById(int id)
         {
             return await _context.Products.FirstOrDefaultAsync(x => x.Id.Equals(id));
         }
@@ -39,8 +39,9 @@ namespace HardCodeTestApi.Services
             await _context.SaveChangesAsync();
         }
 
-        public async Task Delete(Product product)
+        public async Task Delete(int id)
         {
+            var product = await _context.Products.FirstOrDefaultAsync(x => x.Id.Equals(id));
             _context.Remove(product);
             await _context.SaveChangesAsync();
         }
