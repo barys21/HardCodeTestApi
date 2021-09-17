@@ -1,4 +1,5 @@
 using HardCodeTestApi.Data;
+using HardCodeTestApi.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -24,6 +25,9 @@ namespace HardCodeTestApi
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddTransient<CategoryAppService, CategoryAppService>();
+            services.AddTransient<ProductAppService, ProductAppService>();
 
             services.AddSwaggerGen(options =>
                 options.SwaggerDoc("v1", new OpenApiInfo { Title = "Conference Planner API", Version = "v1" }));
